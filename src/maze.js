@@ -21,10 +21,10 @@ let strokeSize = 1;
 // ============================================
 // Customize colors here
 // FORMAT: [Red, Green, Blue, Alpha];
-let bg = [60,47,47, 255];
-let color_cellWalls = [255,244,230, 255];
-let color_movingCell = [133,68,66, 255];
-let color_unvisited = [190,155,123, 255];
+let bg = [255, 255, 255, 255];
+let color_cellWalls = [0, 0, 0, 255];
+let color_movingCell = [0 ,255, 0, 255];
+let color_unvisited = [0, 0, 0, 255];
 // ============================================
 
 let _width = s*cellX, _height = s*cellY;
@@ -36,7 +36,6 @@ let endPos;
 
 function setup() {
   createCanvas(_width, _height);
-  //frameRate(10);
   
   cols = floor(width/floor(width/cellX));
   rows = floor(height/floor(height/cellY));
